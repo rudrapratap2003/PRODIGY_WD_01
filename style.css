@@ -1,0 +1,424 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;    
+}
+header {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  position: fixed;
+  align-items: center;
+  background:black;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  padding: 10px 20px;
+}
+.logo {
+  height: 60px;
+  width: auto;
+  margin: auto 20px;
+}
+.navbar {
+  margin-top: 10px;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+  //margin-right: 30px;
+  padding: 10px 20px;
+  font-size: 30px;
+  position: relative;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.navbar a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  border-bottom: 2px solid rgb(220, 220, 113);
+  transition: 0.4s linear;
+}
+.navbar a:hover {
+  color: rgb(220, 220, 113);;
+}
+.navbar a:hover:before {
+  width: 70%;
+}
+.call {
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+  margin-right: 30px;
+  color: rgb(220, 220, 113);
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#phone {
+  width: 25px;
+  margin-right: 5px;
+  //padding: 12px;
+}
+.home{
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 140vh;
+  background: url("https://wallpapercave.com/wp/wp4848079.jpg") no-repeat;
+  flex-direction: column;
+  background-size: cover;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 20px;
+}
+.content {
+  color: white;
+  word-spacing: 0.5rem;
+  margin-left: 20px;
+  width: 500px;
+  font-size: 35px;
+}
+.design {
+  text-decoration: none;
+  background-color: black;
+  opacity: 0.9;
+  padding: 10px;
+  font-size: 18px;
+  color: rgb(220, 220, 113);
+  border: 2px solid rgb(220, 220, 113);
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 5px;
+}
+.design:hover {
+  background-color: white;
+  color: rgb(86, 86, 10);
+}
+
+.about {
+  min-height: 100vh;
+  min-width: 140vh;
+  display: flex;
+  flex-direction: column;
+  background: url("about.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.head {
+  font-size: 40px;
+  color: rgb(220, 220, 113);
+}
+.t1 {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  padding: 15px;
+}
+.note {
+  width: 600px;
+  margin: 30px;
+  word-spacing: 0.5rem;
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.watch {
+  height: 240px;
+  width: 300px;
+  border-radius: 20px;
+}
+.products {
+  background: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  min-height: 100vh;
+  min-width: 140vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-top: 120px;
+  padding-bottom: 50px;
+}
+.pro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 1100px;
+}
+.card {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+  background-color: white;
+  width:300px;
+  height: 400px;
+  border-radius: 40px;
+}
+.image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.first-image {
+  height: 220px;
+  z-index: 2;
+}
+
+.second-image {
+  height: 220px;
+  z-index: 1;
+}
+
+.card:not(:hover) .first-image {
+  transform: translateX(0); 
+}
+
+.card:hover .first-image {
+  transform: translateX(-100%);
+}
+
+.brand {
+  position: absolute;
+  top: 230px;
+  left: 0;
+  right: 0;
+  text-align: center; 
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 5px;
+  font-size: 25px; 
+  font-family: "Tilt Neon", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
+}
+.rating {
+  width: 75px;
+  position: absolute;
+  top: 160px;
+  left: 10px;
+  display: flex;
+  justify-content: space-around;
+  z-index: 3;
+  padding: 3px;
+  background: white;
+  border-radius: 12px;
+  opacity: 0.8;
+}
+.star {
+  height: 20px;
+  width: 20px;
+  margin-top: 12px;
+}
+.rating p {
+  font-size: 14px;
+  font-weight: 600;
+}
+#like {
+  top: 10px;
+  right: 30px;
+  font-size: 25px;
+  position: absolute;
+  z-index: 3;
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+  padding: 10px;
+  border-radius: 50%;
+}
+.liked {
+  color: red;
+}
+.best {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  background-color: orange;
+  z-index: 3;
+  padding: 5px;
+  width: 90px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: white;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.price {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  bottom: 10px;
+  left: 20px;
+  width: 250px;
+}
+.now {
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+.prev {
+  text-decoration: line-through;
+  color: rgb(175, 172, 172);
+  font-family: "Prompt", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+}
+.offer {
+  color: orangered;
+  font-size: 23px;
+  margin-top: 20px;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.gen {
+  position: absolute;
+  z-index: 3;
+  left: 20px;
+  bottom: 70px;
+  color: rgb(147, 146, 146);
+  padding: 8px;
+  font-size: 18px;
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.contact{
+  background: url("contact.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 100vh;
+  min-width: 140vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  padding-top: 80px;
+  align-items: center;
+}
+.heading{
+  text-transform: uppercase;
+  font-size: 50px;
+  color: rgb(220, 220, 113);
+  word-spacing: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+form {
+  padding-top: 20px;
+  width: 400px;
+  height: 500px;
+  border: 2px solid rgb(103, 103, 1);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-box {
+  margin: 20px;
+  position: relative;
+  width: 250px;
+}
+.input-box input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  box-shadow: none;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  padding: 10px 0 5px;
+}
+.input-box textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  box-shadow: none;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  padding: 10px 0 5px;
+  resize: none;
+}
+.input-box span {
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  left: 0;
+  padding: 10px 0 5px;
+  color: rgba(255,255,255,0.5);
+  pointer-events: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: 0.3s;
+}
+
+.input-box input:valid ~ span,
+.input-box input:focus ~ span {
+  color: #2196f3;
+  transform: translateY(-16px);
+  font-size: 0.8em;
+}
+.input-box textarea:valid ~ span,
+.input-box textarea:focus ~ span {
+  color: #2196f3;
+  transform: translateY(-16px);
+  font-size: 0.8em;
+}
+.input-box i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: white;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.send {
+  width: 100px;
+  border-radius: 8px;
+  border: 2px solid rgb(150, 150, 31);
+  font-size: 25px;
+  margin: 20px;
+  padding: 5px;
+  color: white;
+  background-color: rgb(146, 146, 30);
+  cursor: pointer;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.send:hover {
+  background-color: rgb(96, 96, 15);
+  border: 1px solid rgb(96, 96, 15);
+}

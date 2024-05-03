@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barrio&family=Berkshire+Swash&family=Cabin+Sketch:wght@400;700&family=Cherry+Cream+Soda&family=Cormorant+Upright:wght@300;400;500;600;700&family=Delius+Unicase:wght@400;700&family=Fjalla+One&family=Hind+Siliguri:wght@300;400;500;600;700&family=Indie+Flower&family=Kalam:wght@300;400;700&family=Lobster&family=Oswald:wght@200..700&family=Protest+Riot&family=Roboto+Slab:wght@100..900&family=Stick&family=Varela+Round&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barrio&family=Berkshire+Swash&family=Cabin+Sketch:wght@400;700&family=Cherry+Cream+Soda&family=Cormorant+Upright:wght@300;400;500;600;700&family=Delius+Unicase:wght@400;700&family=Fjalla+One&family=Hind+Siliguri:wght@300;400;500;600;700&family=Indie+Flower&family=Kalam:wght@300;400;700&family=Lobster&family=Oswald:wght@200..700&family=Protest+Riot&family=Roboto+Slab:wght@100..900&family=Shadows+Into+Light&family=Stick&family=Varela+Round&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barrio&family=Berkshire+Swash&family=Cabin+Sketch:wght@400;700&family=Cherry+Cream+Soda&family=Cormorant+Upright:wght@300;400;500;600;700&family=Delius+Unicase:wght@400;700&family=Fjalla+One&family=Hind+Siliguri:wght@300;400;500;600;700&family=Indie+Flower&family=Jost:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&family=Lobster&family=Oswald:wght@200..700&family=Protest+Riot&family=Roboto+Slab:wght@100..900&family=Shadows+Into+Light&family=Stick&family=Varela+Round&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barrio&family=Berkshire+Swash&family=Cabin+Sketch:wght@400;700&family=Cherry+Cream+Soda&family=Cormorant+Upright:wght@300;400;500;600;700&family=Delius+Unicase:wght@400;700&family=Fjalla+One&family=Hind+Siliguri:wght@300;400;500;600;700&family=Indie+Flower&family=Jost:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Protest+Riot&family=Roboto+Slab:wght@100..900&family=Shadows+Into+Light&family=Stick&family=Varela+Round&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barrio&family=Berkshire+Swash&family=Cabin+Sketch:wght@400;700&family=Cherry+Cream+Soda&family=Cormorant+Upright:wght@300;400;500;600;700&family=Delius+Unicase:wght@400;700&family=Fjalla+One&family=Hind+Siliguri:wght@300;400;500;600;700&family=Indie+Flower&family=Jost:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&family=Roboto+Slab:wght@100..900&family=Shadows+Into+Light&family=Stick&family=Varela+Round&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barrio&family=Berkshire+Swash&family=Cabin+Sketch:wght@400;700&family=Cherry+Cream+Soda&family=Cormorant+Upright:wght@300;400;500;600;700&family=Delius+Unicase:wght@400;700&family=Fjalla+One&family=Hind+Siliguri:wght@300;400;500;600;700&family=Indie+Flower&family=Jost:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&family=Shadows+Into+Light&family=Stick&family=Varela+Round&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barrio&family=Berkshire+Swash&family=Cabin+Sketch:wght@400;700&family=Cherry+Cream+Soda&family=Cormorant+Upright:wght@300;400;500;600;700&family=Delius+Unicase:wght@400;700&family=Fjalla+One&family=Hind+Siliguri:wght@300;400;500;600;700&family=Indie+Flower&family=Jost:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&family=Shadows+Into+Light&family=Stick&family=Varela+Round&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Gluten:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Madimi+One&family=Marcellus&family=Ojuju:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Permanent+Marker&family=Protest+Guerrilla&family=Protest+Revolution&family=Protest+Riot&family=Rakkas&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&family=Space+Grotesk:wght@300..700&family=Tilt+Neon&family=Whisper&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="watch_logo.png" alt="" class="logo">
+        <nav class="navbar">
+            <a href="#home" id="home-link">Home</a>
+            <a href="#about" id="about-link">About US</a>
+            <a href="#products" id="products-link">Products</a>
+            <a href="#contact" id="contact-link">Contact</a>
+        </nav>
+        <div class="call">
+            <div class="fas fa-phone-volume" id="phone"></div>
+            <p>1800-1253-4562</p>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h1>CUSTOM WATCHES FOR ANY OCCASION</h1>
+            <a href="#products" class="design">DESIGN & ORDER</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="head">
+            <h1>ABOUT US</h1>
+        </div>
+        <div class="text">
+            <div class="t1">            
+                <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta odit voluptate possimus soluta aliquam magnam nihil alias qui. Dolores enim ipsum odio dignissimos impedit inventore. Omnis facere ratione harum totam?</p>
+                <img src="https://wallpaperaccess.com/full/3046105.jpg" alt="" class="watch">
+            </div>
+            <div class="t1">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.q1F7n4w_SLcZt-2zWmxK7QHaFj&pid=Api&P=0&h=180" alt="" class="watch">            
+                <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta odit voluptate possimus soluta aliquam magnam nihil alias qui. Dolores enim ipsum odio dignissimos impedit inventore. Omnis facere ratione harum totam?</p>
+                
+            </div>
+            <div class="t1">            
+                <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta odit voluptate possimus soluta aliquam magnam nihil alias qui. Dolores enim ipsum odio dignissimos impedit inventore. Omnis facere ratione harum totam?</p>
+                <img src="https://tse2.mm.bing.net/th?id=OIP.3gWxRHD5jT43_brceFHt4AHaFy&pid=Api&P=0&h=180" alt="" class="watch">
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="head">OUR PRODUCTS</div>
+        <div class="pro">
+            <div class="card">
+                <img src="https://cdn.shopify.com/s/files/1/0278/9723/3501/files/Tissot-PRX-Powermatic-80-Blue-hand-2.jpg?v=1647019492" alt="First Image" class="image first-image" />
+                <img src="watch1.png" alt="Second Image" class="image second-image" />
+                <div class="rating">
+                    <img src="http://www.clipartbest.com/cliparts/niB/RXg/niBRXgyqT.png" alt="" class="star">
+                    <p>4.5 (150)</p>
+                </div>
+                <div class="fas fa-heart" id="like" onclick="toggleLikeColor(this)"></div>
+                <div class="brand">Rolex Watch</div>
+                <div class="best">Best Seller</div>
+                <div class="price">
+                    <p class="now">₹ 1435</p>
+                    <p class="prev">₹ 2030</p>
+                    <p class="offer">30% off</p>
+                </div>
+                <div class="gen">Guys Watch</div>
+            </div>
+            <div class="card">
+                <img src="watch7.jpg" alt="First Image" class="image first-image" />
+                <img src="watch8.jpg" alt="Second Image" class="image second-image" />
+                <div class="rating">
+                    <img src="http://www.clipartbest.com/cliparts/niB/RXg/niBRXgyqT.png" alt="" class="star">
+                    <p>4.2 (30)</p>
+                </div>
+                <div class="fas fa-heart" id="like" onclick="toggleLikeColor(this)"></div>
+                <div class="brand">Titan Nq2606wm08 Analog Watch</div>
+                <div class="best">Best Seller</div>
+                <div class="price">
+                    <p class="now">₹ 1435</p>
+                    <p class="prev">₹ 2030</p>
+                    <p class="offer">30% off</p>
+                </div>
+                <div class="gen">Girls Watch</div>
+            </div>
+            <div class="card">
+                <img src="watch11.jpg" alt="First Image" class="image first-image" />
+                <img src="watch12.jpg" alt="Second Image" class="image second-image" />
+                <div class="rating">
+                    <img src="http://www.clipartbest.com/cliparts/niB/RXg/niBRXgyqT.png" alt="" class="star">
+                    <p>4.6 (42)</p>
+                </div>
+                <div class="fas fa-heart" id="like" onclick="toggleLikeColor(this)"></div>
+                <div class="brand">Amazfit Zepp E Stylish Smart Watch</div>
+                <div class="price">
+                    <p class="now">₹ 1435</p>
+                    <p class="prev">₹ 2030</p>
+                    <p class="offer">30% off</p>
+                </div>
+                <div class="gen">Guys Watch</div>
+            </div>
+            <div class="card">
+                <img src="watch9.jpg" alt="First Image" class="image first-image" />
+                <img src="watch10.jpg" alt="Second Image" class="image second-image" />
+                <div class="rating">
+                    <img src="http://www.clipartbest.com/cliparts/niB/RXg/niBRXgyqT.png" alt="" class="star">
+                    <p>3.9 (62)</p>
+                </div>
+                <div class="fas fa-heart" id="like" onclick="toggleLikeColor(this)"></div>
+                <div class="brand">Fire-Boltt Hurricane Smartwatch</div>
+                <div class="best">Best Seller</div>
+                <div class="price">
+                    <p class="now">₹ 1435</p>
+                    <p class="prev">₹ 2030</p>
+                    <p class="offer">30% off</p>
+                </div>
+                <div class="gen">Guys Watch</div>
+            </div>
+            <div class="card">
+                <img src="https://cdn4.ethoswatches.com/the-watch-guide/wp-content/uploads/2022/11/jacob-co-epic-x-swiss-luxury-automatic-skeleton-4.jpg" alt="First Image" class="image first-image" />
+                <img src="https://i.pinimg.com/736x/0b/26/db/0b26db03dd0f2db4cf7e8b153dba6dec.jpg" alt="Second Image" class="image second-image" />
+                <div class="rating">
+                    <img src="http://www.clipartbest.com/cliparts/niB/RXg/niBRXgyqT.png" alt="" class="star">
+                    <p>4.9 (19)</p>
+                </div>
+                <div class="fas fa-heart" id="like" onclick="toggleLikeColor(this)" onclick=""></div>
+                <div class="brand">Brand new Fastrack Watch</div>
+                <div class="price">
+                    <p class="now">₹ 1435</p>
+                    <p class="prev">₹ 2030</p>
+                    <p class="offer">30% off</p>
+                </div>
+                <div class="gen">Guys Watch</div>
+            </div>
+            <div class="card">
+                <img src="watch3.jpg" alt="First Image" class="image first-image" />
+                <img src="watch4.jpg" alt="Second Image" class="image second-image" />
+                <div class="rating">
+                    <img src="http://www.clipartbest.com/cliparts/niB/RXg/niBRXgyqT.png" alt="" class="star">
+                    <p>4.0 (23)</p>
+                </div>
+                <div class="fas fa-heart" id="like" onclick="toggleLikeColor(this)"></div>
+                <div class="brand">SWADESI STUFF Leather Strap Analog Watch</div>
+                <div class="price">
+                    <p class="now">₹ 1435</p>
+                    <p class="prev">₹ 2030</p>
+                    <p class="offer">30% off</p>
+                </div>
+                <div class="gen">Girls Watch</div>
+            </div>
+            <div class="card">
+                <img src="watch5.jpg" alt="First Image" class="image first-image" />
+                <img src="watch6.jpg" alt="Second Image" class="image second-image" />
+                <div class="rating">
+                    <img src="http://www.clipartbest.com/cliparts/niB/RXg/niBRXgyqT.png" alt="" class="star">
+                    <p>4.1 (11)</p>
+                </div>
+                <div class="fas fa-heart" id="like" onclick="toggleLikeColor(this)"></div>
+                <div class="brand">Timex Analog Watch</div>
+                <div class="price">
+                    <p class="now">₹ 1435</p>
+                    <p class="prev">₹ 2030</p>
+                    <p class="offer">30% off</p>
+                </div>
+                <div class="gen">Guys Watch</div>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQyaEycKaxXVVeu0a3K1y_sLaNIA4GVkDT7vjlIAHxLbyALK0HKnZlrIBAX5gHNs2u--_uazoPnzzvITTNkcEmKh5UtDWoikAEYwGXZ037M" alt="First Image" class="image first-image" />
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSGY4O_gxbp3MxRUlerBo56SYEKgQqe9hOkYYt4ZRbPJVUSCmVeo15WtSTlUaytnTUrRHGnpjWtNveJO-Tq2SCK5Ts6xvlnhaDFNoLf4f8" alt="Second Image" class="image second-image" />
+                <div class="rating">
+                    <img src="http://www.clipartbest.com/cliparts/niB/RXg/niBRXgyqT.png" alt="" class="star">
+                    <p>4.4 (52)</p>
+                </div>
+                <div class="fas fa-heart" id="like" onclick="toggleLikeColor(this)"></div>
+                <div class="brand">Ku Roman Black Dial Wrist Girls Analog Watch</div>
+                <div class="best">Best Seller</div>
+                <div class="price">
+                    <p class="now">₹ 1435</p>
+                    <p class="prev">₹ 2030</p>
+                    <p class="offer">30% off</p>
+                </div>
+                <div class="gen">Girls Watch</div>
+            </div>
+            <div class="card">
+                <img src="https://images.fonearena.com/blog/wp-content/uploads/2022/07/Fastrack-Reflex-Play-display.jpg" alt="First Image" class="image first-image" />
+                <img src="https://i.ytimg.com/vi/3HV_53_JHA8/maxresdefault.jpg" alt="Second Image" class="image second-image" />
+                <div class="rating">
+                    <img src="http://www.clipartbest.com/cliparts/niB/RXg/niBRXgyqT.png" alt="" class="star">
+                    <p>4.7 (425)</p>
+                </div>
+                <div class="fas fa-heart" id="like" onclick="toggleLikeColor(this)" onclick=""></div>
+                <div class="brand">Fastrack REFLEX PLAY</div>
+                <div class="price">
+                    <p class="now">₹ 1435</p>
+                    <p class="prev">₹ 2030</p>
+                    <p class="offer">30% off</p>
+                </div>
+                <div class="gen">Guys Watch</div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1 class="heading">Contact Us</h1>
+                <form action="">
+                    <div class="input-box">
+                        <input type="text" required="required">
+                        <span>Enter your name</span>
+                        <i></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" required="required">
+                        <span>Enter your Email</span>
+                        <i></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="number" required="required">
+                        <span>Enter your number</span>
+                        <i></i>
+                    </div>
+                    <div class="input-box">
+                        <textarea name="" id="" cols="10" rows="3" required="required"></textarea>
+                        <span>Enter your message</span>
+                        <i></i>
+                    </div>
+                    <button class="send">Send</button>
+                </form>
+     </section>
+</body>
+</html>
+<script>
+    document.getElementById('about-link').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#about').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+    document.getElementById('products-link').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#products').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+    document.getElementById('home-link').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#home').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+    document.getElementById('contact-link').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#contact').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+    document.querySelector('.design').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#products').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+    function toggleLikeColor(heartIcon) {
+        // Get the current color of the heart icon
+        var currentColor = heartIcon.style.color;
+
+        // Check if the current color is red
+        if (currentColor === 'red') {
+            // If it's red, change it back to the default color (black)
+            heartIcon.style.color = '';
+        } else {
+            // If it's not red, change it to red
+            heartIcon.style.color = 'red';
+        }
+    }
+</script>
