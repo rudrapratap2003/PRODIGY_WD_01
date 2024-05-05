@@ -121,6 +121,10 @@ header {
 .head {
   font-size: 40px;
   color: rgb(220, 220, 113);
+  font-family: "Briem Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 .t1 {
   display: flex;
@@ -137,6 +141,7 @@ header {
   font-style: normal;
 }
 .watch {
+  margin-top: 20px;
   height: 240px;
   width: 300px;
   border-radius: 20px;
@@ -154,6 +159,16 @@ header {
   padding: 20px;
   padding-top: 120px;
   padding-bottom: 50px;
+}
+.headp {
+  letter-spacing: 0.1rem;
+  padding-bottom: 50px;
+  font-size: 60px;
+  color: rgb(220, 220, 113);
+  font-family: "Briem Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
 }
 .pro {
   display: flex;
@@ -329,6 +344,10 @@ header {
   color: rgb(220, 220, 113);
   word-spacing: 0.8rem;
   letter-spacing: 0.1rem;
+  font-family: "Briem Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 form {
   padding-top: 20px;
